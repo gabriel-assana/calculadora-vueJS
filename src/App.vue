@@ -1,18 +1,35 @@
 <template>
   <div>
     <div class="calculadora">
-      <Display/>
+        <Display class= "display"/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
+        <Botoes/>
     </div>  
   </div>  
 </template>
 
 <script>
 import Display from './components/Display.vue'
+import Botoes from './components/Botoes.vue'
 
 export default {
   name: 'App',
   components: {
-    Display
+    Display,
+    Botoes
   }
 }
 </script>
