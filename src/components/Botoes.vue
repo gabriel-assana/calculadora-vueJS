@@ -1,14 +1,24 @@
 <template>
     <div>
-      <button class="btn">{{opBotao}}</button>
+      <button class="btn">{{ opBotao }}</button>
     </div>
 </template>
 
 <script>
   export default {
     name: 'Botoes',
+    data(){
+      return {
+        btnOption : this.opBotao
+      }
+    },
     props:{
       opBotao: String
+    },
+    method: {
+      btnSelect(btnOption){
+        console.log(btnOption)
+      }
     }
   }
 </script>
