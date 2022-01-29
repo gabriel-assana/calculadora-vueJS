@@ -1,6 +1,6 @@
 <template>
     <div>
-      <button class="btn"> {{ opBotao }} </button>
+      <button class="btn"> {{opBotao}} </button>
     </div>
 </template>
 
@@ -9,22 +9,11 @@
     name: 'Botoes',
     props:{
       opBotao: String
-    },  
-    data(){
-      return{
-        valorAtual: 0,
-        result:0,
-      }
-    },
-  methods: {
-    dividir(){
-      
-    }
-  }
+    } 
 }
 </script>
 
-<style>
+<style scoped>
 
 .btn{
   color: white;
@@ -41,7 +30,7 @@
 }
 
 .btn-operadores button{
-  background-color: #F1A23D;
+  background-color: #f88d00;
 }
 
 </style>
